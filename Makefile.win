@@ -1,0 +1,82 @@
+# Project: Projeto-filme
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o Cadastro.o Site.o LimparBuffer.o Pause.o FuncaoEnter.o AtualizarCatalogo.o ListarFilmes.o AutenticarLogin.o AvaliacaoDupla.o VerificarFilme.o AtualizarMedia.o AvaliarFilme.o ExibirAvaliacoes.o AvaliacoesFilme.o Top5Melhores.o Top5Piores.o AlterarMedia.o AlterarAvaliacao.o
+LINKOBJ  = main.o Cadastro.o Site.o LimparBuffer.o Pause.o FuncaoEnter.o AtualizarCatalogo.o ListarFilmes.o AutenticarLogin.o AvaliacaoDupla.o VerificarFilme.o AtualizarMedia.o AvaliarFilme.o ExibirAvaliacoes.o AvaliacoesFilme.o Top5Melhores.o Top5Piores.o AlterarMedia.o AlterarAvaliacao.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Av3-novaversao-lp1.exe
+CXXFLAGS = $(CXXINCS) -std=c99
+CFLAGS   = $(INCS) -std=c99
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+Cadastro.o: Cadastro.c
+	$(CC) -c Cadastro.c -o Cadastro.o $(CFLAGS)
+
+Site.o: Site.c
+	$(CC) -c Site.c -o Site.o $(CFLAGS)
+
+LimparBuffer.o: LimparBuffer.c
+	$(CC) -c LimparBuffer.c -o LimparBuffer.o $(CFLAGS)
+
+Pause.o: Pause.c
+	$(CC) -c Pause.c -o Pause.o $(CFLAGS)
+
+FuncaoEnter.o: FuncaoEnter.c
+	$(CC) -c FuncaoEnter.c -o FuncaoEnter.o $(CFLAGS)
+
+AtualizarCatalogo.o: AtualizarCatalogo.c
+	$(CC) -c AtualizarCatalogo.c -o AtualizarCatalogo.o $(CFLAGS)
+
+ListarFilmes.o: ListarFilmes.c
+	$(CC) -c ListarFilmes.c -o ListarFilmes.o $(CFLAGS)
+
+AutenticarLogin.o: AutenticarLogin.c
+	$(CC) -c AutenticarLogin.c -o AutenticarLogin.o $(CFLAGS)
+
+AvaliacaoDupla.o: AvaliacaoDupla.c
+	$(CC) -c AvaliacaoDupla.c -o AvaliacaoDupla.o $(CFLAGS)
+
+VerificarFilme.o: VerificarFilme.c
+	$(CC) -c VerificarFilme.c -o VerificarFilme.o $(CFLAGS)
+
+AtualizarMedia.o: AtualizarMedia.c
+	$(CC) -c AtualizarMedia.c -o AtualizarMedia.o $(CFLAGS)
+
+AvaliarFilme.o: AvaliarFilme.c
+	$(CC) -c AvaliarFilme.c -o AvaliarFilme.o $(CFLAGS)
+
+ExibirAvaliacoes.o: ExibirAvaliacoes.c
+	$(CC) -c ExibirAvaliacoes.c -o ExibirAvaliacoes.o $(CFLAGS)
+
+AvaliacoesFilme.o: AvaliacoesFilme.c
+	$(CC) -c AvaliacoesFilme.c -o AvaliacoesFilme.o $(CFLAGS)
+
+Top5Melhores.o: Top5Melhores.c
+	$(CC) -c Top5Melhores.c -o Top5Melhores.o $(CFLAGS)
+
+Top5Piores.o: Top5Piores.c
+	$(CC) -c Top5Piores.c -o Top5Piores.o $(CFLAGS)
+
+AlterarMedia.o: AlterarMedia.c
+	$(CC) -c AlterarMedia.c -o AlterarMedia.o $(CFLAGS)
+
+AlterarAvaliacao.o: AlterarAvaliacao.c
+	$(CC) -c AlterarAvaliacao.c -o AlterarAvaliacao.o $(CFLAGS)
