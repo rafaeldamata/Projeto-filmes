@@ -125,10 +125,10 @@ int main() {
 				}
                 break;
             case 0:
-                 printf("                              				 Obrigado por usar o CINENOTE. Ate a proxima!\n"); 
+                 printf("                              				 Obrigado por usar o MY MOVIES. Ate a proxima!\n"); 
 				 break;
             default:
-			 printf("                              				 Opcao **inválida**! Por favor, escolha um número de 1 a 9.\n");
+			 printf("                              				 Opcao **invalida**! Por favor, escolha um número de 1 a 9.\n");
             break;
         }
 
