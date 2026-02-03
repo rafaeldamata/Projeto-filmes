@@ -60,6 +60,7 @@ Campos principais:  Nome e senha do usuário
 Campos principais: Título do filme, nome do usuário, nota (1 até 5) e comentário
 
 🚀 Como Executar
+
 Certifique-se de ter um compilador C (como GCC) instalado.
 
 -> Clone o repositório:
