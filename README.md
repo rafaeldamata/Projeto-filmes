@@ -48,12 +48,15 @@ Estrutura de Dados
 Arquivos 
 
 -> Filmes
+
 Campos principais: Título, resumo, n° de avaliadores, n° de comentários, média e soma de notas.
 
 -> Cadastro
+
 Campos principais:  Nome e senha do usuário
 
 -> Avaliações
+
 Campos principais: Título do filme, nome do usuário, nota (1 até 5) e comentário
 
 🚀 Como Executar
@@ -63,10 +66,12 @@ Certifique-se de ter um compilador C (como GCC) instalado.
 
 Bash
 git clone https://github.com/rafaeldamata/Projeto-filmes.git
+
 -> Compile o projeto:
 
 Bash
 gcc main.c -o cinenote
+
 -> Execute o programa:
 
 Bash
