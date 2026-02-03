@@ -1,4 +1,5 @@
 Cinenote - Sistema de Avaliação de Filmes 🎬
+
 O Cinenote é um sistema de avaliação de filmes desenvolvido em linguagem C como projeto final da disciplina de Linguagem de Programação I (Sistemas de Informação - UNEB). O software permite que entusiastas do cinema cataloguem, avaliem e compartilhem opiniões sobre obras cinematográficas, promovendo a interação entre usuários por meio de uma base de dados organizada.
 
 📌 Funcionalidades Principais
