@@ -46,8 +46,11 @@ Estrutura de Dados
 -> O sistema utiliza structs e tabelas para organizar as informações em três arquivos principais:
 
 Arquivos                       Campos Principais
+
 Filmes                            Título, resumo, n° de avaliadores, n° de comentários, média e soma de notas.
+
 Cadastro                          Nome e senha do usuário
+
 Avaliações                        Título do filme, nome do usuário, nota (1 até 5) e comentário
 
 🚀 Como Executar
